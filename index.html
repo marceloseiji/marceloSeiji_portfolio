@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>marceloSeiji Porfólio-Design</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascriptPort.js"></script>
+  <link rel="stylesheet" type="text/css" href="style2.css"/>
+</head>
+
+<body>
+
+  <main>
+    <!--Barra de navegação--> 
+    <div id="divNav" class="container-fluid  sticky-top">
+      <nav class="navbar navbar-expand-sm navbar-light myNavbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfólio</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" data-toggle="modal" data-target="#cvModal">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contato">Contato</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+  <!-- Modal acionado por btnCv -->
+  <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="labelModalCv" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="labelModalCv">marceloSeiji CV</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" id="imgCv" src="images/CV_Marcelo Seiji.jpg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Sobre-->
+  <div class="sobre">
+    <div class="row">
+
+      <div class="col-sm-4">
+        <img src="images/fotoport2.jpg" class="img-fluid  imgTop">
+        <img src="images/fotoport1.jpg" class="img-fluid fotoEu imgBottom">
+      </div>
+
+      <div class="col text-right align-bottom sobre-texto">
+        <p class="textoF">marcelo Seiji</p>
+        <p6>Html | Css | javaScript | jQuery | bootStrap</p>
+      </div>
+
+    </div>
+  </div>         
+        
+  <!--Portfólio-->
+  <div id="portfolio" class="text-center">
+    
+    <p class="textoD">Portfólio</p>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-6">
+          <a href="https://codepen.io/marceloseiji/full/ELwYWx/" target="blank"><img class="img-fluid img-thumbnail" id="imgGal" src="images\jrrtolkien-smoking.jpg"></img></a>
+          <p class="rodape">Simples página com purto bootstrap e mínimo css</p>
+        </div>
+        
+        <div class="col-sm-6">
+            <a href="https://marceloseijiport.000webhostapp.com/api_cep_marceloSeiji/marcelo%20seiji_apiCep.html" target="blank"><img class="img-fluid img-thumbnail" id="imgGal" src="images\apicep.jpg"></img></a>
+            <p class="rodape">API de busca de endereço por CEP, input com máscara de CEP e validação de campos.</p>
+        </div>
+
+      </div> 
+
+      <div class="row">
+  
+          <div class="col-sm-6">
+
+              <a href="https://marceloseijiport.000webhostapp.com/codigosManuaisAJAX/index.html" target="blank"><img class="img-fluid img-thumbnail" id="imgGal" src="images\ajax-swapi.jpg"></img></a>
+              <p class="rodape">Requisição assíncrona com AJAX, utilização de dados retornados de objeto em tabela que é criada ao usar a interface.</p>
+              
+          </div>
+
+          <div class="col-sm-6">
+          </div>
+
+      </div>
+          
+      <hr class="divisa">
+    </div>
+
+  <!--Contatos-->   
+  <div id="contato" class="text-center">
+
+    <div class="container"  id="contato-topo">
+    <p class="textoD2">Fale Comigo</p>
+    <p6>ikuta.marcelo@gmail.com</p6>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form">
+          <div class="form-group">
+            <label for="inputNome"></label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome" required disabled>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail"></label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" required disabled>
+          </div>
+          <div class="form-group">
+            <label for="areaTexto"></label>
+            <textarea class="form-control" id="areaTexto" rows="3" placeholder="Mensagem" required disabled></textarea>
+          </div>
+          <button type="submit" value="Send" class="btn btn-primary" id="btnEnviar">Enviar</button>
+        </div>
+      </div>
+
+  <div class="col-sm-6">
+    <p2>Este site é apenas uma simples mostra de aplicação das linguagens e frameworks que tenho estudado.</p2></br>
+      </div>
+    </div>
+  </div>
+</main>
+    
+  <!--Footer--> 
+  <footer class="text-center">
+    <div id="footerAcima">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="button social" href="https://github.com/marceloseiji" target="blank"><i class="fa fa-fw fa-github"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="button social" href="#"><i class="fa fa-linkedin"></i></a>
+        </li>                                                           
+      </ul>
+    </div>
+    <p3>coded By marceloSeiji</p3>
+  </footer>
+        </div>
+      </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

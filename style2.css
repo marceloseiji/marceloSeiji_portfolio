@@ -1,0 +1,215 @@
+body {
+  background-color: #333333;
+}
+#divNav {
+  transition: 1s;
+  background-color: #ffffff;
+  padding: 0px 10px 0px 10px;
+}
+.nav-pills {
+  transition: 1s;
+}
+.nav-pills .nav-link {
+  background-color: #777777;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 2px;
+  transition: .5s;
+  padding: 5px 15px 5px 15px;
+  border-radius: 0px;
+  width: 120px;
+}
+.nav-pills .nav-link.active {
+  background-color: #009494;
+  transition: 1s;
+}
+.nav-pills .nav-link:hover {
+  color: #cccccc;
+}
+#imgCv {
+  width: 760px;
+}
+a:not([href]):not([tabindex]) {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+main {
+  margin: auto;
+  background-color: #333333;
+  max-width: 960px;
+}
+.sobre {
+  background-image: url("images/codigo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+}
+.sobre-texto {
+  position: relative;
+  top: 180px;
+  right: 15px;
+}
+#portfolio, #contato {
+  background-color: #ffffff;
+  padding: 10px 20px 10px 20px;
+}
+#contato-topo {
+    margin-bottom: 20px;
+}
+.imgTop {
+  position: absolute;
+  left: 15px;
+}
+.imgBottom:hover {
+  opacity: 0;
+ }
+.imgBottom {
+  transition: .5s;
+  position: absolute;
+  left: 15px;
+}
+footer {
+  background-color: transparent;
+}
+ul.list-inline {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.textoS {
+  color: #009494;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.textoD {
+  color: #009494;
+  font-size: 28px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.textoD2 {
+  color: #009494;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-weight: 700;
+}
+.textoF {
+  color: #23E8D3;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+  margin-bottom: -10px;
+}
+p4 {
+  color: #23E8D3;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Caveat';
+  margin-bottom: -10px;
+}
+p2 {
+  color: #009494;
+  font-size: 20px;
+}
+p3 {
+  color: #fff;
+  font-size: 20px;
+}
+p4 {
+  color: #23E8D3;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Caveat';
+  margin-bottom: -10px;
+}
+p5 {
+  color: #23E8D3;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+p6 {
+  color: #009494;
+  font-size: 15px;
+}
+.rodape {
+  color: #009494;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 18px;
+}
+ul.portfolioGaleria li {
+  list-style-type: none;
+}
+#imgGal {
+  border-radius: 8px;
+  width: 400px;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+#imgGal:hover {
+  opacity: 0.8;
+}
+hr.divisa {
+  border-top: 3px solid #009494;
+  margin-top: 30px;
+}
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0px 20px 0px;
+  color: white;
+  border: solid white 5px;
+  border-radius: 50%;
+  transition: .5s;
+}
+.fa:hover {
+  border-radius: 25%;
+  text-decoration: none;
+}
+.ipt {
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 5px 5px 5px 5px;
+}
+.form-group {
+  margin: -5px;
+}
+.btn-primary#btnEnviar {
+  margin: 20px;
+  background-color: #009494;
+  border-color: #009494;
+}
+.btn-primary#btnEnviar:hover {
+  opacity: .8;
+}
+@media (max-width: 580px) {
+  .imgBottom {
+    width: 160px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid silver;
+  }
+  .imgTop {
+    width: 160px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid silver;
+  }
+  .textoF {
+    font-size: 50px;
+  }
+  .sobre-texto {
+    top: 220px;
+  }
+}
