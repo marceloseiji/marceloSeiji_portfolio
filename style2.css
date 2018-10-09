@@ -143,8 +143,6 @@ a:not([href]):not([tabindex]):hover {
 }
 
 #contato {
-  margin-left: 60px;
-  margin-right: 60px;
   padding: 10px 20px 10px 20px;
 }
 
